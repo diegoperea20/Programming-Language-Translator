@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: python:3.9-slim
+    container_name: contain-translate-pr
+    environment:
+      OPENAI_API_KEY: WRITE_YOUR_API_OPENAI_KEY_HERE # Especifica aquí tu clave de API de OpenAI
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && flask run --host=0.0.0.0"

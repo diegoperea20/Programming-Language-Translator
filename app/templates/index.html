@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="home">
+    <div class="center-element">
+   <h1>Programming Language Translator</h1>
+	<form method="POST" action="/">
+        <div class="center-label-actual">
+		<label for="source_lang">Current programming language :</label>
+		<input type="text" id="source_lang" name="source_lang" value="{{ request.form['source_lang'] }}"  class="input-text">
+        
+        <br><br>
+        
+		<label for="code">Code to translate :</label><br>
+        <textarea id="code" name="code" rows="20" cols="50" class="text-area">{{ request.form['code'] }}</textarea>
+        
+    
+        <br><br>
+
+		<label for="target_lang">Target programming language :</label>
+		<input type="text" id="target_lang" name="target_lang"  value="{{ request.form['target_lang'] }}" class="input-text"><br><br>
+		<input type="submit" value="Translate" class="botton">
+    
+	</form>
+	{% if translated_code %}
+		<h2>Translated code:</h2>
+        <div class="textarea-wrapper">
+
+		<textarea id="translated_code" name="translated_code" rows="20" cols="50" class="text-area">{{ translated_code }}</textarea>
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+        
+        </div>
+        <script>
+            function copyToClipboard() {
+                const textarea = document.getElementById("translated_code");
+                textarea.select();
+                document.execCommand("copy");
+                }
+
+        </script>
+	{% endif %}
+</div>
+    </div>
+</body>
+</html>

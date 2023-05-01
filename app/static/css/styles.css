@@ -1,0 +1,222 @@
+body::-webkit-scrollbar {
+    width: 7px;
+    background: #18191B;
+}
+body::-webkit-scrollbar-thumb{
+    background: white;
+}
+.home {
+    background: #454754;
+} 
+
+.input-text {
+    background-color: black;
+    color: white;
+    border: 2px solid #a68186;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #937d80;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+
+.text-area{
+    background-color: black;
+    color: white;
+    border: 2px solid #a68186;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #937d80;
+    padding: 5px;
+    padding-right: 60px; 
+    font-size: 20px;
+}
+
+.botton {
+    background-color: #343440;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+  
+.botton:hover {
+    background-color: white;
+    color: #343440;
+}
+
+
+h1,h2, label {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px black;
+    padding: 10px;
+  }
+  
+
+label,h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 1.5;
+    justify-content: center;
+     align-items: center;
+}
+
+.center-element {
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-label-actual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.center-label-actual label {
+    margin-bottom: 10px;
+}
+
+.textarea-wrapper {
+    position: relative;
+  }
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+.copy-btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
+
+/*phones*/
+@media screen and (max-width: 780px) {
+    body::-webkit-scrollbar {
+      width: 7px;
+      background: #18191B;
+    }
+  
+    body::-webkit-scrollbar-thumb{
+      background: white;
+    }
+  
+    .home {
+      background: #454754;
+    }
+  
+    .input-text {
+      background-color: black;
+      color: white;
+      border: 2px solid #a68186;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #937d80;
+      padding: 5px;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .text-area {
+      background-color: black;
+      color: white;
+      border: 2px solid #a68186;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #937d80;
+      padding: 5px;
+      width: 90%;
+      padding-right: 30px;
+      font-size: 20px;
+      text-align: center;
+      
+    }
+  
+    .botton {
+      background-color: #343440;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+  
+    .botton:hover {
+      background-color: white;
+      color: #343440;
+    }
+  
+    h1, h2, label {
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  
+    h1 {
+      font-size: 36px;
+      margin-top: 50px;
+      text-shadow: 2px 2px 4px black;
+      padding: 10px;
+    }
+  
+    label, h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      line-height: 1.5;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .center-element {
+      padding-left: 60px;
+      padding-right: 60px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .center-label-actual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .center-label-actual label {
+      margin-bottom: 10px;
+    }
+  
+    .textarea-wrapper {
+      position: relative;
+    }
+  
+    .copy-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .copy-btn:hover {
+      cursor: pointer;
+      background-color: #ccc;
+    }
+  }
+  
